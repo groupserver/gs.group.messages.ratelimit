@@ -37,6 +37,7 @@ setup(name='gs.group.messages.ratelimit',
         'gs.group.home',
         'gs.group.member.base',
         'gs.group.messages.base',
+        'gs.help',
         'Products.GSGroup',
         # -*- Extra requirements: -*-
     ],
