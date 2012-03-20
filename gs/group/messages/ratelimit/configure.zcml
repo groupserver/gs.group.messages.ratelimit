@@ -10,14 +10,12 @@
     permission="zope2.ManageProperties"/>
 
   <!--The Admin Tab -->
-  <!-- Not configured yet, discussion required first 
-  <browser:viewlet name="gs-group-messages-moderate-home-admin-tab"
+  <browser:viewlet name="gs-group-messages-ratelimit-home-admin-tab"
     manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
     template="browser/templates/adminlist.pt"
     class="gs.group.member.base.viewlet.GroupAdminViewlet"
     permission="zope2.ManageUsers"
     weight="5"
-    title="Request" />
-  -->
+    title="Change the posting rate" />
 
 </configure>

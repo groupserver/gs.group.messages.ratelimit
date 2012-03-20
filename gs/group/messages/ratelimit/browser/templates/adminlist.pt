@@ -1,5 +1,4 @@
 <li id="moderate-links"><a href="admin_ratelimit_change.html">Change
-    the <strong>posting rate limit</strong></a> in
-  <span class="group" tal:content="view/groupInfo/name">this group</span>.
+    the maximum <strong>posting rate.</strong></a>
 </li><!--moderate-links-->
 
