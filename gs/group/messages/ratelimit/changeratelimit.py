@@ -8,7 +8,7 @@ from gs.content.form.radio import radio_widget
 from interfaces import IGSMessageRateLimit
 
 class ChangeMessageRateLimit(GroupForm):
-    label = u'Change Posting Limit'
+    label = u'Change the Posting Rate'
     pageTemplateFileName = 'browser/templates/changeratelimit.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
     form_fields = form.Fields(IGSMessageRateLimit, render_context=False)
