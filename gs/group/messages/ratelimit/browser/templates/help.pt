@@ -1,0 +1,37 @@
+<div id="gs-group-messages-ratelimit" class="help">
+  <h2>Change the Maximum Posting Rate</h2>
+  <p id="gs-group-messages-ratelimit-intro" class="intro">The 
+    <cite class="wordasword">posting rate</cite> determines how 
+    frequently each member can post to a group in a single day.
+    There are two reasons to set it. First, it prevents one person
+    from sending an overwelming number of messages to a group;
+    setting a value in the range 10&#8212;30 posts per day will achive 
+    this.
+    Second, setting a <em>very</em> low maximum posting rate (less than
+    10 post per day) can cause people to consider their posts more, 
+    because it  creates a high cost to making "me too" posts.
+    (The flip side of this is that it can cause a member to post 
+    off-topic because he or she can only post a few times per day.)
+  </p>
+  <p>To change the maximum posting rate carry out the following 
+    steps.</p>
+  <ol>
+    <li>Log in.</li>
+    <li>Visit the homepage for your group.</li>
+    <li>Select the <samp class="tab">Admin</samp> tab,
+      and click
+      <samp class="link">Change the maximum posting rate.</samp>
+      The <cite class="page">Change the Posting Rate</cite> page will be 
+      shown.
+    <li>Enter the maximum number of posts per day in the 
+      <samp class="entry">Posts per day</samp> entry.</li>
+    <li>Click the <samp class="button">Change</samp> button.
+      The maximum number of posts per day that can be made by each 
+      member of your group will be set.</li>
+  </ol>
+  <p class="note"><strong class="label">Note: </strong>
+    The maximum posting rate does not apply to the administrators of
+    the group.
+  </p>
+</div><!--gs-group-messages-ratelimit-->
+
