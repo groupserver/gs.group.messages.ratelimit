@@ -17,7 +17,7 @@
     permission="zope2.ManageUsers"
     weight="5"
     title="Change the posting rate" />
-    
+  
   <!-- The Help -->
   <browser:viewlet name="gs-group-messages-ratelimit-help"
     manager="gs.help.interfaces.IAdminHelp"
