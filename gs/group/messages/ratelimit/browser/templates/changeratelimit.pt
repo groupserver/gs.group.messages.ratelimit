@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
-  metal:use-macro="context/@@groupserver_layout/page">
+  metal:use-macro="context/@@groupserver_site_home_layout/page">
   <head>
     <title metal:fill-slot="title">
       <span tal:replace="string:${view/label}: ${view/groupInfo/name}: ${view/siteInfo/get_name}">
@@ -20,7 +20,9 @@
         tal:attributes="action request/URL" id="changeratelimit">
         <p id="introduction">
           To change the rate at which an individual may post in
-          <span class="group" tal:content="view/groupInfo/name"/>
+          <a tal:attributes="href view/groupInfo/relativeURL;"
+             tal:content="view/groupInfo/name"
+             class="group" href="#">this group</a>,
           set a number of posts per day and press the
           <samp class="button">Change</samp> button.
         </p>
