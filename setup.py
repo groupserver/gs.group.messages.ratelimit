@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -32,16 +32,18 @@ setup(name='gs.group.messages.ratelimit',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.cachedescriptors',
+        'zope.component',
+        'zope.formlib',
+        'zope.interface',
+        'zope.schema',
+        'Zope2',
         'gs.content.form',
         'gs.group.base',
-        'gs.group.home',
-        'gs.group.member.base',
-        'gs.group.messages.base',
+        'gs.group.properties',
+        'gs.group.messages.viewlet',
         'gs.help',
-        'Products.GSGroup',
-        # -*- Extra requirements: -*-
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
