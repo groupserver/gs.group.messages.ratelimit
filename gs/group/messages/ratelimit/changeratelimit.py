@@ -8,7 +8,7 @@ from interfaces import IGSMessageRateLimit
 
 
 class ChangeMessageRateLimit(GroupForm):
-    label = u'Change the Posting Rate'
+    label = u'Change the posting rate'
     pageTemplateFileName = 'browser/templates/changeratelimit.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
     form_fields = form.Fields(IGSMessageRateLimit, render_context=False)
