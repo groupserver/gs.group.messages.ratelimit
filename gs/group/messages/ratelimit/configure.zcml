@@ -1,16 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright © 2013, 2014 OnlineGroups.net and Contributors. -->
+<!-- All Rights Reserved. -->
+
+<!-- This software is subject to the provisions of the Zope Public -->
+<!-- License, Version 2.1 (ZPL).  A copy of the ZPL should accompany this -->
+<!-- distribution. -->
+
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED -->
+<!-- WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED -->
+<!-- WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE. -->
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:five="http://namespaces.zope.org/five">
-  
-  <browser:page 
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <include package="zope.viewlet" file="meta.zcml" />
+
+  <browser:page
     for="Products.XWFChat.interfaces.IGSGroupFolder"
     name="admin_ratelimit_change.html"
     class=".changeratelimit.ChangeMessageRateLimit"
     permission="zope2.ManageProperties"/>
 
   <!--The Admin Tab -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-messages-ratelimit-home-admin-tab"
     manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
     template="browser/templates/adminlist.pt"
@@ -18,12 +29,11 @@
     permission="zope2.ManageUsers"
     weight="5"
     title="Change the posting rate" />
-  
+
   <!-- The Help -->
   <browser:viewlet name="gs-group-messages-ratelimit-help"
     manager="gs.help.interfaces.IAdminHelp"
     template="browser/templates/help.pt"
     permission="zope.Public"
     weight="4" />
-
 </configure>

@@ -1,6 +1,5 @@
 <li id="gs-group-messages-ratelimit-admin-links">
   <a tal:attributes="href string:${view/groupInfo/relative_url}/admin_ratelimit_change.html"
-     href="admin_ratelimit_change.html">Change the maximum 
+     href="admin_ratelimit_change.html">Change the maximum
     <strong>posting rate</strong></a>
 </li><!--group-messages-ratelimit-admin-links-->
-

@@ -9,7 +9,7 @@
       </span>
     </title>
     <tal:block metal:fill-slot="metadata">
-      <link rel="up" href="#" 
+      <link rel="up" href="#"
             tal:attributes="href view/groupInfo/relativeURL;
                             title view/groupInfo/name"/>
     </tal:block>
@@ -27,14 +27,14 @@
                 tal:content="string:${view/siteInfo/name} Homepage">Home</span></a>
       </li>
       <li>
-        <a class="group" 
+        <a class="group"
            tal:attributes="href string:${view/groupInfo/relativeURL}/">
           <strong
             tal:content="view/groupInfo/name">This group</strong></a>
       </li>
       <li tal:content="view/label">Stuff</li>
     </ul>
-    <form metal:fill-slot="body" enctype="multipart/form-data"  method="post" 
+    <form metal:fill-slot="body" enctype="multipart/form-data"  method="post"
           action="." tal:attributes="action request/URL" id="changeratelimit">
       <h1 tal:content="view/label">&#160;</h1>
       <p id="introduction">
@@ -57,7 +57,7 @@
       </div><!--buttons-->
     </form>
     <script type="text/javascript" metal:fill-slot="javascript">
-      document.getElementById('form.postsPerDay').focus()
+      document.getElementById('form.postsPerDay').focus();
     </script>
   </body>
 </html>
